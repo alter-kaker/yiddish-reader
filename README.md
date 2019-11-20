@@ -22,3 +22,6 @@ Thanks to Hans Hagen and Wolfgang Schuster for the quick right-to-left fix. Hope
 
 ### Fonts
 Fonts are included from [Aharon Varady](https://github.com/aharonium/fonts)'s repository for ease and convenience. Thanks to Aharon, [Culmus Project](http://culmus.sourceforge.net/), and [Michal Sahar](https://github.com/MichalSahar) for the fonts.
+
+### The Texts
+Special thanks to [Raphael Finkel](http://www.cs.uky.edu/~raphael/) for making OCR'd texts in Yiddish available before anyone else on the Internet!
