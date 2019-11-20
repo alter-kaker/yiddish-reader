@@ -1,0 +1,21 @@
+\startenvironment book-6x9
+
+% 6x9 Book Layout
+\definepapersize[book][
+	width=6in, height=9in]
+
+\setuppapersize[book]
+
+\setuplayout[
+	grid=yes,
+	width=4in,
+	backspace=.67in,
+	height=\dimexpr6.13in+6\lineheight,
+	topspace=\dimexpr1in-2\lineheight,
+	header=2\lineheight,
+	footer=\dimexpr4\lineheight
+] 
+
+\setuppagenumbering[alternative=doublesided]
+
+\stopenvironment

@@ -1,0 +1,59 @@
+\startenvironment yiddish
+\mainlanguage[yiddish]
+
+\setupdirections[bidi=global,method=one]
+\setupalign[r2l, hz, hanging]
+\setuplayout[direction=reverse]
+\setupinteractionscreen[option=righttoleft]
+
+% Numbers
+
+\def\hebrewnumber#1%
+ {\ifcase#1 \or א
+                \or ב
+                \or ג
+                \or ד
+                \or ה
+                \or ו
+                \or ז
+                \or ח
+                \or ט
+                \or י
+                
+                \else -\fi}
+                
+\defineconversion[hebrewnumerals][\hebrewnumber]
+
+% Fonts
+\definefontfeature [yiddish] [hebrew] [
+	protrusion=punctuation,
+	expansion=quality,
+% 	hlig=no,
+% 	liga=no,
+	dlig=no,
+% 	clig=no
+]
+
+\starttypescript [serif] [Frank Ruehl]
+	\definefontsynonym [Serif]		[FrankRuehlCLM-Medium.ttf]	[features=yiddish]
+	\definefontsynonym [SerifBold]	[FrankRuehlCLM-Bold-Expanded.ttf]		[features=yiddish]
+\stoptypescript
+
+\starttypescript [sans] [Secular]
+	\definefontsynonym [Sans]  [SecularOne-Regular.ttf]		[features=yiddish]
+	\definefontsynonym [SansBold]	[SuezOne-Regular.ttf]		[features=yiddish]
+\stoptypescript
+
+\definetypeface [yiddish]	[rm]	[serif] [Frank Ruehl]
+\definetypeface [yiddish]	[ss]	[sans]	[Secular]
+
+\setupbodyfont[yiddish,rm,12pt]
+\setupbodyfontenvironment	[default][em=bold]
+
+\setupbodyfont [yiddish]
+
+% Strings replacement
+
+\setupheadtext[content=אינהאַלט]
+
+\stopenvironment

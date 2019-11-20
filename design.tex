@@ -1,0 +1,87 @@
+\startenvironment design
+
+% Grid
+
+\setuplayout[grid=yes]
+% \showgrid[yes]
+
+% Headings
+
+\define[2]\StoryTitle{%
+	\framed[
+    frame=off,
+    location=hanging,
+    offset=overlay,
+    top=\vss,
+    bottom=,
+    width=broad,
+    height=10\lineheight,
+    align=middle,
+  ]{%
+% 		\doiftextelse{\structureuservariable{subtitle}}{%
+%       \blank[5*line]%
+% 		}{% 
+%      \blank[7*line]%
+%     }%
+		\doiftext{\structureuservariable{author}}{%
+		\tf
+      \structureuservariable{author}\\%
+    }%
+		\ss\bfd#2%
+		\doiftext{\structureuservariable{subtitle}}{%
+			\\\bfa\structureuservariable{subtitle}%
+		}
+	}
+}
+
+\definepagebreak
+	[chapterpagebreak]
+	[yes,header,footer,right]
+
+\setuphead[
+  chapter] [
+  header=empty,
+  page=chapterpagebreak,
+  alternative=command,
+  command=\StoryTitle,
+  number=no,
+  style=\bf
+]
+
+%Page Numbers, Headers, and Footers
+
+\setuppagenumbering[location={footer,left}]
+\setupheadertexts[{}]
+
+\startsectionblockenvironment [frontpart]
+  \setupuserpagenumber [numberconversion=hebrewnumerals]
+\stopsectionblockenvironment
+
+\setupsectionblock[frontpart][page=chapterpagebreak]
+\setupsectionblock[bodypart][page=chapterpagebreak]
+\setupsectionblock[backpart][page=chapterpagebreak]
+\setupsectionblock[appendix][page=chapterpagebreak]
+
+\startsectionblockenvironment[bodypart]
+  \setuppagenumber[number=1]
+\stopsectionblockenvironment
+
+% TOC
+
+\define[1]\StoryListTitle{%
+  #1 
+    \doiftext{\structurelistuservariable{author}}{%
+      / \structurelistuservariable{author}
+  }
+}
+    
+\setuplist
+    [chapter]
+    [textcommand=\StoryListTitle]
+
+%Misc
+\setupindenting[yes,small]
+
+\setupcombinedlist[content][alternative=c]
+
+\stopenvironment
