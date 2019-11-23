@@ -1,5 +1,6 @@
 # yiddish-reader
-## A set of ConTeXt environments and fonts for Yiddish anthology publishing, with sample texts
+## A project aiming to create high-quality typeset printable Yiddish texts using the TeX typesetting engine and the ConTeXt macro package.
+
 
 ### To compile on Linux:
 - Install [ConTeXt Standalone](https://www.contextgarden.net/ConTeXt_Standalone)
