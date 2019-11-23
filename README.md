@@ -28,6 +28,6 @@ Thanks to Hans Hagen and Wolfgang Schuster for the quick right-to-left fix. Hope
 Fonts are included from [Aharon Varady](https://github.com/aharonium/fonts)'s repository for ease and convenience. Thanks to Aharon, [Culmus Project](http://culmus.sourceforge.net/), and [Michal Sahar](https://github.com/MichalSahar) for the fonts.
 
 ### The Texts
-- Thanks to the [Yiddish Book Center](https://www.yiddishbookcenter.org/) for scanning thousands of Yiddish books and supporting the JOCHRE project for [Yiddish OCR](https://ocr.yiddishbookcenter.org/)!
-- Thanks to Assaf Urieli for developing [JOCHRE](https://github.com/urieli/jochre)!
+- Thanks to the [Yiddish Book Center](https://www.yiddishbookcenter.org/) for scanning thousands of Yiddish books and supporting the Jochre project for [Yiddish OCR](https://ocr.yiddishbookcenter.org/)!
+- Thanks to Assaf Urieli for developing [Jochre](https://github.com/urieli/jochre)!
 - Special thanks to [Raphael Finkel](http://www.cs.uky.edu/~raphael/) for making OCR'd texts in Yiddish available before anyone else on the Internet!
