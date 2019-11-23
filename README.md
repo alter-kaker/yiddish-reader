@@ -12,9 +12,12 @@
 ```
 #/bin/bash
 
-source context_dir/tex/setuptex
-context mayses.tex --jobname=mayses-letter --result=mayses-letter  --purge
-context mayses.tex --mode=book --purge
+source ~/context/tex/setuptex
+
+context reader --jobname=reader-letter --result=reader-letter  --purge
+context reader --jobname=reader-book --result=reader-book --mode=book --purge
+
+mv *.pdf ./output
 ```
 
 Remember to replace `context_dir` with the directory where you installed ConTeXt Standalone.
