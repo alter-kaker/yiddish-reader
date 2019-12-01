@@ -1,0 +1,21 @@
+# Yiddish Reader Style Guide
+
+## Spelling:
+
+- List of nonstandard spellings that should always be followed:
+  - אַף
+  - באַ
+- List of nonstandard spellings that should be followed unless _canonical_ source text spells them to YIVO standard:
+  - זענען, זענט
+- Always use וואו and וואוי instead of ווו and וווי
+- Spell Hebrew words as they are spelled in Hebrew, and including the final letter form when there's a Yiddish suffix
+- Spell vocabulary words, including words with detachable prefix, according to dictionary (to facilitate lookup)
+- Nonstandard compounds (ex: דעמזעלבן), follow the source text, but spell components according to the normal rules.
+
+## Punctuation and Characters:
+
+- Use horizontal bar (―) for dialogue, <bdo dir='rtl'>„ציטאַט־צייכנס“</bdo> for quotations, Makaf (־) for hyphenation, and Geresh (׳) and Gershayim (״) for acronyms and indicated contractions, respectively.
+- Use Geresh for contractions in the beginning of words (ex: כ׳האָב) but not for standard דעם contractions (ex: מיטן).
+- Use rafe on פֿ and בֿ where necessary.
+- Always use compound characters: אָ, אַ, יִ, פֿ, פּ, בֿ, ײַ. 
+- Never use compound characters: וו, וי, יי
