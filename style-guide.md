@@ -14,7 +14,7 @@
 
 ## Punctuation and Characters:
 
-- Use horizontal bar (―) for dialogue, <bdo dir='rtl'>„ציטאַט־צייכנס“</bdo> for quotations, Makaf (־) for hyphenation, and Geresh (׳) and Gershayim (״) for acronyms and indicated contractions, respectively.
+- Use horizontal bar (―) for dialogue, <em dir='rtl'>„ציטאַט־צייכנס“</em> for quotations, Makaf (־) for hyphenation, and Geresh (׳) and Gershayim (״) for acronyms and indicated contractions, respectively.
 - Use Geresh for contractions in the beginning of words (ex: כ׳האָב) but not for standard דעם contractions (ex: מיטן).
 - Use rafe on פֿ and בֿ where necessary.
 - Always use compound characters: אָ, אַ, יִ, פֿ, פּ, בֿ, ײַ. 
