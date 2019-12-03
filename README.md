@@ -16,6 +16,7 @@ source ~/context/tex/setuptex
 
 context reader --jobname=reader-letter --result=reader-letter  --purge
 context reader --jobname=reader-book --result=reader-book --mode=book --purge
+context reader --jobname=reader-ebook --result=reader-ebook --mode=ebook --purge
 
 mv *.pdf ./output
 ```
