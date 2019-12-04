@@ -6,8 +6,8 @@
   - אַף, אַפֿן
   - באַ, באַם
 - List of nonstandard spellings that should be followed unless _canonical_ source text spells them to YIVO standard:
-  - זענען, זענט
-  - קענען, קענט
+  - זענען, זענט, etc
+  - קענען, קענט, etc
 - Always use וואו and וואוי instead of ווו and וווי
 - Spell Hebrew words as they are spelled in Hebrew, and including the final letter form when there's a Yiddish suffix
 - Spell vocabulary words, including words with detachable prefix, according to dictionary (to facilitate lookup)
