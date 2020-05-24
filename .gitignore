@@ -246,3 +246,6 @@ TSWLatexianTemp*
 
 # shell script for generation
 *.sh
+
+# helper script cache
+__pycache__
