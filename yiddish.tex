@@ -40,7 +40,7 @@
 
 \starttypescript [serif] [Frank Ruehl]
 	\definefontsynonym [Serif]		[file:fonts/FrankRuehlCLM-Medium.ttf]	[features=yiddish]
-	\definefontsynonym [SerifBold]	[file:fonts/FrankRuehlCLM-Bold-Expanded.ttf]		[features=yiddish]
+	\definefontsynonym [SerifBold]	[file:fonts/FrankRuehlCLM-Bold.ttf]		[features=yiddish]
 \stoptypescript
 
 \starttypescript [sans] [Secular]
@@ -52,7 +52,6 @@
 \definetypeface [yiddish]	[ss]	[sans]	[Secular]
 
 \setupbodyfont[yiddish,rm,12pt]
-\setupbodyfontenvironment	[default][em=bold]
 
 \setupbodyfont [yiddish]
 
@@ -63,5 +62,18 @@
 \setupheadtext[content=אינהאַלט]
 
 \input{hyphenation_list}
+
+
+% Emphasis
+
+\definehighlight[em]
+\setuphighlight[em][style={\setcharacterkerning[extrakerning]}]
+
+\usemodule [translate]
+\enableinputtranslation
+
+\translateinput
+  [―]
+  [\sixperemspace―\sixperemspace]
 
 \stopenvironment
