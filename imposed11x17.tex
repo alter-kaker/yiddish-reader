@@ -23,38 +23,10 @@
 	header=2\lineheight,
 	footer=\dimexpr4\lineheight
 ] 
-
-
-\installpagearrangement 2*4*2 % based on one defined by Willy Egger in page-imp.mkiv:
-  {\dosetuparrangement{2}{2}{4}{3}{3}%
-    \pusharrangedpageSIXTEENTWORTL\poparrangedpagesAtoD\relax}
-
-\def\pusharrangedpageSIXTEENTWORTL#1%
-  {\advancearrangedpageN
-   \reportarrangedpage\arrangedpageN
-   \ifcase\arrangedpageN
-   \or \handlearrangedpageXandY{#1}001\arrangedpageA %  1
-   \or \handlearrangedpageXandY{#1}011\arrangedpageB %  2
-   \or \handlearrangedpageXandY{#1}001\arrangedpageC %  3
-   \or \handlearrangedpageXandY{#1}011\arrangedpageD %  4
-   \or \handlearrangedpageXandY{#1}110\arrangedpageD %  5
-   \or \handlearrangedpageXandY{#1}100\arrangedpageC %  6
-   \or \handlearrangedpageXandY{#1}110\arrangedpageB %  7
-   \or \handlearrangedpageXandY{#1}100\arrangedpageA %  8
-   \or \handlearrangedpageXandY{#1}110\arrangedpageA %  9
-   \or \handlearrangedpageXandY{#1}100\arrangedpageB % 10
-   \or \handlearrangedpageXandY{#1}110\arrangedpageC % 11
-   \or \handlearrangedpageXandY{#1}100\arrangedpageD % 12
-   \or \handlearrangedpageXandY{#1}001\arrangedpageD % 13
-   \or \handlearrangedpageXandY{#1}011\arrangedpageC % 14
-   \or \handlearrangedpageXandY{#1}001\arrangedpageB % 15
-   \or \handlearrangedpageXandY{#1}011\arrangedpageA % 16
-     \poparrangedpages
-   \fi}
-
 \setuparranging [2*4*2, doublesided]
 
 \setuppagenumbering[alternative=doublesided]
+\showframe
 
 \stopenvironment
  
