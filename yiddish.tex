@@ -8,10 +8,11 @@
 
 \setupheadtext[content=אינהאַלט]
 
-\installlanguage
-   [yiddish]
-   [righthyphenchar="05BE,
-    default=en]
+% breaks the head text
+% \installlanguage
+%    [yiddish]
+%    [righthyphenchar="05BE,
+%     default=en]
 
 \mainlanguage[yiddish]
 
@@ -135,9 +136,14 @@ interfaces.implement {
     arguments = { "integer", true, true }
 }
 
-
-
 \stopluacode
+
+\unprotect
+\def\hebrewnumerals#1{\clf_hebrewnumerals\numexpr#1\relax}
+\protect
+
+
+\defineconversion [hebrewnumerals] [\hebrewnumerals]
 
 \enabletrackers[converters.hebrew]
 
@@ -168,14 +174,6 @@ interfaces.implement {
 
 \setupbodyfont [yiddish]
 
-\setuphyphenmark[sign=normal]
-
-
-% Hyphenation
-
-\input{hyphenation_list}
-
-
 % Emphasis
 
 \definehighlight[em]
@@ -184,8 +182,14 @@ interfaces.implement {
 \usemodule [translate]
 \enableinputtranslation
 
+% Correct horizontal bar spacing
+
 \translateinput
   [―]
   [\sixperemspace―\sixperemspace]
+
+% Hyphenation
+
+\input{hyphenation_list}
 
 \stopenvironment
